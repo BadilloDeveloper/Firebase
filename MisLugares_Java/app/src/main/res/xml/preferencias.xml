@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_principal">
+    <CheckBoxPreference
+        android:key="notificaciones"
+        android:summary="Notificar si estamos cerca de un lugar"
+        android:title="Mandar notificaciones" />
+    <EditTextPreference
+        android:defaultValue="20"
+        android:inputType="number"
+        android:key="maximo"
+        android:summary="Limita en número de valores que se muestran en la lista"
+        android:title="Máximo de lugares a mostrar"
+        />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/tiposOrden"
+        android:entryValues="@array/tiposOrdenValores"
+        android:key="orden"
+        android:summary="Que lugares quieres que aparezcan antes"
+        android:title="Criterio de ordenación" />
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/tiposSeleccion"
+        android:entryValues="@array/tiposSeleccionValores"
+        android:key="seleccion"
+        android:summary="Que lugares quieres que se muestren"
+        android:title="Criterio de selección" />
+    <EditTextPreference
+        android:defaultValue="BAR"
+        android:inputType="textCapCharacters"
+        android:key="tipo_seleccion"
+        android:summary="Si criterio de selección es tipo, el tipo a mostrar"
+        android:title="Tipo de lugares a mostrar" />
+
+
+
+</PreferenceScreen>
+
